@@ -1,0 +1,15 @@
+{
+  "canisters": {
+    "day2": {
+      "main": "main.mo",
+      "type": "motoko"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": "vessel sources"
+    }
+  },
+  "version": 1
+}

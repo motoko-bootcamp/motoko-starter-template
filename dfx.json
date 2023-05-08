@@ -1,0 +1,31 @@
+{
+  "canisters": {
+    "day1": {
+      "main": "src/day1/main.mo",
+      "type": "motoko"
+    },
+    "day2": {
+      "main": "src/day2/main.mo",
+      "type": "motoko"
+    },
+    "day3": {
+      "main": "src/day3/main.mo",
+      "type": "motoko"
+    },
+    "day4": {
+      "main": "src/day4/main.mo",
+      "type": "motoko"
+    },
+    "day5": {
+      "main": "src/day5/main.mo",
+      "type": "motoko"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": "vessel sources"
+    }
+  },
+  "version": 1
+}

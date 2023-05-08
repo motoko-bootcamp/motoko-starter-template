@@ -1,0 +1,29 @@
+{
+  "name": "motoko-starter-template",
+  "version": "0.2.0",
+  "description": "Motoko Starter Template",
+  "keywords": [
+    "Internet Computer",
+    "Motoko",
+    "Canister"
+  ],
+  "scripts": {
+    "deploy:local": "dfx deploy --network=local",
+    "deploy:ic": "dfx deploy --network=ic",
+    "test": "mo-test --testmode interpreter --verbose",
+    "test:day1": "mo-test -C src/day1 --testmode interpreter --verbose",
+    "test:day2": "mo-test -C src/day2 --testmode interpreter --verbose",
+    "test:day3": "mo-test -C src/day3 --testmode interpreter --verbose",
+    "test:day4": "mo-test -C src/day4 --testmode interpreter --verbose",
+    "test:day5": "mo-test -C src/day5 --testmode interpreter --verbose",
+    "prettier": "npx prettier --write ."
+  },
+  "devDependencies": {
+    "mo-dev": "^0.7.1",
+    "prettier": "^2.8.1",
+    "prettier-plugin-motoko": "^0.5.2"
+  },
+  "engines": {
+    "node": "^12 || ^14 || ^16 || ^18"
+  }
+}
