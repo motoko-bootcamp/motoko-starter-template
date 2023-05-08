@@ -57,7 +57,7 @@ let success = run([
         "should divide a number to counter",
         do {
           let response = await day1Actor.div(2.0);
-          assertTrue(response == ?2.0);
+          assertTrue(response == 2.0);
         },
       ),
     ],
