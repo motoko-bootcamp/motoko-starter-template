@@ -10,7 +10,7 @@ Run specs and ensure you have green on your daily project ✅
 
 Video walkthroughs:
 
-English: https://www.loom.com/share/215d539c21694128a66dac83d9c06c14
+English: https://www.loom.com/share/0743532e645e4334af7765239c8ff0b7
 
 Spanish: https://www.loom.com/share/52019fd23bb245968836499d952b3d5c
 
