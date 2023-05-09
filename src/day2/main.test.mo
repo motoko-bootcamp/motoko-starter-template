@@ -83,6 +83,25 @@ let success = run([
     ],
   ),
   describe(
+    "#markAsCompleted",
+    [
+      it(
+        "should mark as complete an existent Homework",
+        do {
+          let response = await day2Actor.markAsCompleted(0);
+          switch (response) {
+            case (#ok) {
+              true;
+            };
+            case (#err(message)) {
+              Debug.trap("Homework not found");
+            };
+          };
+        },
+      ),
+    ],
+  ),
+  describe(
     "#deleteHomework",
     [
       it(
@@ -110,25 +129,6 @@ let success = run([
           ignore await day2Actor.addHomework(homeworkTest);
           let response = await day2Actor.getAllHomework();
           assertTrue(response.size() == 1);
-        },
-      ),
-    ],
-  ),
-  describe(
-    "#markAsCompleted",
-    [
-      it(
-        "should mark as complete an existent Homework",
-        do {
-          let response = await day2Actor.markAsCompleted(0);
-          switch (response) {
-            case (#ok) {
-              true;
-            };
-            case (#err(message)) {
-              Debug.trap("Homework not found");
-            };
-          };
         },
       ),
     ],

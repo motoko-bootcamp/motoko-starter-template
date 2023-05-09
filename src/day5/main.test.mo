@@ -173,29 +173,6 @@ let success = run([
     ],
   ),
   describe(
-    "#verifyOwnership",
-    [
-      it(
-        "should verify if caller is a controller of the given canister",
-        do {
-          // NOTE: Not possible to test locally,
-          // as actor "aaaa-aa" (aka the IC itself, exposed as an interface) does not exist locally
-          // let calculatorActor = await Calculator.Calculator();
-          // let response = await day5Actor.verifyOwnership(Principal.fromActor(calculatorActor), runnerPrincipal);
-          // switch (response) {
-          //   case (#ok(result)) {
-          //     assertTrue(result);
-          //   };
-          //   case (#err(message)) {
-          //     Debug.trap(message);
-          //   };
-          // };
-          true;
-        },
-      ),
-    ],
-  ),
-  describe(
     "#activateGraduation",
     [
       it(
