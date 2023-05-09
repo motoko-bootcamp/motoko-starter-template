@@ -17,8 +17,8 @@ actor class Calculator() {
   };
 
   // Step 5 - Implement div
-  public func div(x : Float) : async ?Float {
-    return ?0.0;
+  public func div(x : Float) : async Float {
+    return 0.0;
   };
 
   // Step 6 - Implement reset
