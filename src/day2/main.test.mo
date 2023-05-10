@@ -139,7 +139,6 @@ let success = run([
       it(
         "should get Homework not completed",
         do {
-          ignore await day2Actor.addHomework(homeworkTest);
           let response = await day2Actor.getPendingHomework();
           assertTrue(response.size() == 1);
         },
