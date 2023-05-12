@@ -11,14 +11,4 @@ module {
     vote : Int;
     creator : Principal;
   };
-
-  public type Answer = (
-    description : Text, // contains description of the answer
-    numberOfVotes : Nat // represents the number of votes for this answer
-  );
-
-  public type Survey = {
-    title : Text; // title describes the survey
-    answers : [Answer]; // possible answers for the survey
-  };
 };
