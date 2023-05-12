@@ -10,8 +10,6 @@ import Nat32 "mo:base/Nat32";
 actor class StudentWall() {
   type Message = Type.Message;
   type Content = Type.Content;
-  type Survey = Type.Survey;
-  type Answer = Type.Answer;
 
   // Add a new message to the wall
   public shared ({ caller }) func writeMessage(c : Content) : async Nat {
