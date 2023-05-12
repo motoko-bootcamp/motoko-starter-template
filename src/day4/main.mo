@@ -42,7 +42,7 @@ actor class MotoCoin() {
     return #ok;
   };
 
-  // Airdrop 1000 MotoCoin to any student that is part of the Bootcamp.
+  // Airdrop 100 MotoCoin to any student that is part of the Bootcamp.
   public func airdrop() : async Result.Result<(), Text> {
     return #err("not implemented");
   };
