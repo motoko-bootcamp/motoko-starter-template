@@ -1,6 +1,7 @@
 import Blob "mo:base/Blob";
 import Array "mo:base/Array";
 import Option "mo:base/Option";
+import Nat32 "mo:base/Nat32";
 import Nat8 "mo:base/Nat8";
 import Nat "mo:base/Nat";
 import Principal "mo:base/Principal";
