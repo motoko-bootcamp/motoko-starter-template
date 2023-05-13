@@ -3,7 +3,7 @@ import Result "mo:base/Result";
 module {
   public type StudentProfile = {
     name : Text;
-    Team : Text;
+    team : Text;
     graduate : Bool;
   };
 
