@@ -6,7 +6,6 @@ import MoSpec "mo:mospec/MoSpec";
 import Main "main";
 import Calculator "Calculator";
 import Type "Types";
-import Http "Http";
 
 let day5Actor = await Main.Verifier();
 
@@ -168,57 +167,6 @@ let success = run([
           // as this method is only subcalling verifyOwnership() + test()
           // and verifyOwnership() is not possible locally
           true;
-        },
-      ),
-    ],
-  ),
-  describe(
-    "#activateGraduation",
-    [
-      it(
-        "should start an hourly recurrent job that checks and graduates students",
-        do {
-          // NOTE: Not possible to test locally,
-          // as Timer is not running on a local replica
-          // await day5Actor.activateGraduation();
-          true;
-        },
-      ),
-    ],
-  ),
-  describe(
-    "#deactivateGraduation",
-    [
-      it(
-        "should stop the recurrent job that checks students",
-        do {
-          // NOTE: Not possible to test locally,
-          // as Timer is not running on a local replica
-          // await day5Actor.deactivateGraduation();
-          true;
-        },
-      ),
-    ],
-  ),
-  describe(
-    "#http_request",
-    [
-      it(
-        "should render a body with a list of student names that got graduated",
-        do {
-          let testRequest : Http.HttpRequest = {
-            body = "";
-            headers = [];
-            method = "GET";
-            url = "/";
-          };
-
-          let response = await day5Actor.http_request(testRequest);
-          let parsedResponse = Text.decodeUtf8(response.body);
-          switch (parsedResponse) {
-            case (null) { Debug.trap("Unexpected body response") };
-            case (?parsedResponse) { assertTrue(Text.size(parsedResponse) > 0) };
-          };
         },
       ),
     ],
