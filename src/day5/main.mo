@@ -12,7 +12,6 @@ import Debug "mo:base/Debug";
 import Buffer "mo:base/Buffer";
 
 import IC "Ic";
-import HTTP "Http";
 import Type "Types";
 
 actor class Verifier() {
@@ -59,28 +58,4 @@ actor class Verifier() {
     return #err("not implemented");
   };
   // STEP 4 - END
-
-  // STEP 5 - BEGIN
-  public type HttpRequest = HTTP.HttpRequest;
-  public type HttpResponse = HTTP.HttpResponse;
-
-  // NOTE: Not possible to develop locally,
-  // as Timer is not running on a local replica
-  public func activateGraduation() : async () {
-    return ();
-  };
-
-  public func deactivateGraduation() : async () {
-    return ();
-  };
-
-  public query func http_request(request : HttpRequest) : async HttpResponse {
-    return ({
-      status_code = 200;
-      headers = [];
-      body = Text.encodeUtf8("");
-      streaming_strategy = null;
-    });
-  };
-  // STEP 5 - END
 };
