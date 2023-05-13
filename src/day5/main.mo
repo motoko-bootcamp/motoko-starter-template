@@ -49,7 +49,7 @@ actor class Verifier() {
   // NOTE: Not possible to develop locally,
   // as actor "aaaa-aa" (aka the IC itself, exposed as an interface) does not exist locally
   public func verifyOwnership(canisterId : Principal, p : Principal) : async Bool {
-    return #err("not implemented");
+    return false;
   };
   // STEP 3 - END
 
