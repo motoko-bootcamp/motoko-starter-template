@@ -48,13 +48,13 @@ actor class Verifier() {
   // STEP 3 - BEGIN
   // NOTE: Not possible to develop locally,
   // as actor "aaaa-aa" (aka the IC itself, exposed as an interface) does not exist locally
-  public func verifyOwnership(canisterId : Principal, p : Principal) : async Result.Result<Bool, Text> {
+  public func verifyOwnership(canisterId : Principal, p : Principal) : async Bool {
     return #err("not implemented");
   };
   // STEP 3 - END
 
   // STEP 4 - BEGIN
-  public shared ({ caller }) func verifyWork(canisterId : Principal, p : Principal) : async Result.Result<Bool, Text> {
+  public shared ({ caller }) func verifyWork(canisterId : Principal, p : Principal) : async Result.Result<(), Text> {
     return #err("not implemented");
   };
   // STEP 4 - END
